@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "program": "/home/amoxe/Desktop/42_projects/CPP_Modules/Module0/ex00/megaphone",
+            "args": ["hello"],
+            "cwd": "/home/amoxe/Desktop/42_projects/CPP_Modules/Module0/ex00"
+        }
+    ]
+}

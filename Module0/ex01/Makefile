@@ -5,16 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: amoxe <amoxe@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/05/11 16:44:10 by amoxe             #+#    #+#              #
-#    Updated: 2022/05/12 15:34:31 by amoxe            ###   ########.fr        #
+#    Created: 2022/05/11 18:32:53 by amoxe             #+#    #+#              #
+#    Updated: 2022/05/11 18:33:14 by amoxe            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME = phonebook
 CC = g++
-SRC = megaphone.cpp
+SRC = phoneBook.cpp
 ObJ = ${SRC:.cpp=.o}
-FLAGS = -Wall -Wextra -Werror -g -fsanitize=address
+FLAGS = -Wall -Wextra -Werror
 
 all: ${NAME}
 
