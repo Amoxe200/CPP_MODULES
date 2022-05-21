@@ -6,15 +6,15 @@
 #    By: amoxe <amoxe@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/11 16:44:10 by amoxe             #+#    #+#              #
-#    Updated: 2022/05/12 15:34:31 by amoxe            ###   ########.fr        #
+#    Updated: 2022/05/13 22:05:00 by amoxe            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = megaphone
-CC = g++
+CC = c++
 SRC = megaphone.cpp
 ObJ = ${SRC:.cpp=.o}
-FLAGS = -Wall -Wextra -Werror -g -fsanitize=address
+FLAGS = -Wall -Wextra -Werror  -std=c++98 -g -fsanitize=address
 
 all: ${NAME}
 

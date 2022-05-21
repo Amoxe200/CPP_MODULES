@@ -52,7 +52,7 @@ int main(int ac, char **av)
 	while (i < ac)
 	{
 		len = 0;
-		len = ft_strlen(av[i]);
+		len = ft_strlen(av[i]);	
 		newStr = upper(av[i], len);
 		std::cout<<newStr;
 		delete[] newStr;

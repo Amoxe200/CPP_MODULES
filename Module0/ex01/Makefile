@@ -6,15 +6,15 @@
 #    By: amoxe <amoxe@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/11 18:32:53 by amoxe             #+#    #+#              #
-#    Updated: 2022/05/11 18:33:14 by amoxe            ###   ########.fr        #
+#    Updated: 2022/05/17 12:42:56 by amoxe            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = phonebook
-CC = g++
-SRC = phoneBook.cpp
+CC = c++
+SRC = main.cpp phonebook.cpp contact.cpp
 ObJ = ${SRC:.cpp=.o}
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -std=c++98 
 
 all: ${NAME}
 
