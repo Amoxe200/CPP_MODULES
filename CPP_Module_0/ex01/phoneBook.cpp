@@ -6,7 +6,7 @@
 /*   By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 15:59:16 by aaqari            #+#    #+#             */
-/*   Updated: 2022/06/21 10:07:14 by aaqari           ###   ########.fr       */
+/*   Updated: 2022/06/21 10:30:15 by aaqari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 PhoneBook::PhoneBook()
 {
-    this->num_contact = -1;
+    this->num_contact = 0;
 }
 
 int PhoneBook::checker(std::string check)
@@ -50,7 +50,7 @@ void    PhoneBook::add_contact()
     std::getline(std::cin, firstName);
     while (PhoneBook::checker(firstName))
     {
-        std::cout<<"ERROR : No FirstNAme Please Enter First Name"<<std::endl;
+        std::cout<<"ERROR : No FirstName Please Enter First Name"<<std::endl;
         std::getline(std::cin, firstName);
     }
 
@@ -91,7 +91,7 @@ void    PhoneBook::add_contact()
 		std::getline(std::cin, phoneNumber);
 	}
 
-	if (this->num_contact <= 8)
+	if (this->num_contact < 7)
 	{
 		this->contact[num_contact].set_firstName(firstName);
 		this->contact[num_contact].set_lastName(lastName);
@@ -114,21 +114,24 @@ void    PhoneBook::add_contact()
 void PhoneBook::print_contact()
 {
 	std::string fname;
-	if (this->num_contact == -1)
+	int counter ;
+
+	counter = 0;
+	if (this->num_contact == 0)
 		std::cout<<"List is Empty"<<std::endl;
 	else
 	{
 		std::cout<<"Number contact : "<<this->num_contact<<std::endl;
-		while (this->num_contact > 0)
+		while (counter < this->num_contact)
 		{
 			std::cout<<"----------------------------------------------------------------------"<<std::endl;
-			std::cout<<"First Name = "<< this->contact[num_contact].get_firstName() << std::endl;
-			std::cout<<"Last Name = "<< this->contact[num_contact].get_lastName() << std::endl;
-			std::cout<<"Nick Name = "<< this->contact[num_contact].get_nickName() << std::endl;
-			std::cout<<"Darkest Secret = "<< this->contact[num_contact].get_darkestSecret() << std::endl;
-			std::cout<<"Phone Number = "<< this->contact[num_contact].get_phoneNumber() << std::endl;
+			std::cout<<"First Name = "<< this->contact[counter].get_firstName() << std::endl;
+			std::cout<<"Last Name = "<< this->contact[counter].get_lastName() << std::endl;
+			std::cout<<"Nick Name = "<< this->contact[counter].get_nickName() << std::endl;
+			std::cout<<"Darkest Secret = "<< this->contact[counter].get_darkestSecret() << std::endl;
+			std::cout<<"Phone Number = "<< this->contact[counter].get_phoneNumber() << std::endl;
 			std::cout<<"----------------------------------------------------------------------"<<std::endl;
-			this->num_contact--;
+			counter++;
 		}	
 	}
 }
