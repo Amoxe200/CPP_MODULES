@@ -1,6 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/amoxe/Desktop/42_projects/CPP_Modules/Module01'
-make: Leaving directory '/home/amoxe/Desktop/42_projects/CPP_Modules/Module01'
- 
-make: *** No targets specified and no makefile found.  Stop.
-
