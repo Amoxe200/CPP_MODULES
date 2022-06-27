@@ -6,7 +6,7 @@
 /*   By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 02:31:31 by aaqari            #+#    #+#             */
-/*   Updated: 2022/06/25 03:51:10 by aaqari           ###   ########.fr       */
+/*   Updated: 2022/06/27 05:19:09 by aaqari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,6 @@ int main()
 	std::cout<<&stringREF<<std::endl;
 	
 	std::cout<<"---------------------------------------------"<<std::endl;
-	
-	std::cout<<"The Value of the string variable"<<std::endl;
-	std::cout<<brain<<std::endl;
 
 	std::cout<<"The value pointed to by stringPTR"<<std::endl;
 	std::cout<<*stringPTR<<std::endl;

@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/06/25 12:30:10 by aaqari            #+#    #+#              #
-#    Updated: 2022/06/26 03:50:14 by aaqari           ###   ########.fr        #
+#    Created: 2022/06/26 04:48:06 by aaqari            #+#    #+#              #
+#    Updated: 2022/06/27 05:21:30 by aaqari           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = replace
+NAME = Karen
 CC = c++
-SRC = main.cpp replace.cpp
+SRC = main.cpp Karen.cpp
 ObJ = ${SRC:.cpp=.o}
 FLAGS = -Wall -Wextra -Werror  -std=c++98 -fsanitize=address
 

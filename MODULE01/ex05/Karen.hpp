@@ -1,20 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*   Karen.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/24 00:28:18 by aaqari            #+#    #+#             */
-/*   Updated: 2022/06/27 05:15:10 by aaqari           ###   ########.fr       */
+/*   Created: 2022/06/26 06:45:04 by aaqari            #+#    #+#             */
+/*   Updated: 2022/06/27 02:19:02 by aaqari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef KAREN_CPP
+#define KAREN_CPP
+#include <iostream>
 
-void    randomChump(std::string name)
-{
-    Zombie *randomChump = newZombie(name);
+class Karen{
 
-    delete randomChump;
-}
+    private: 
+    void debug(void);
+    void info(void);
+    void warning(void);
+    void error(void);
+    std::string names_arr[4];
+
+    public:
+    Karen();
+    void    complain(std::string level);
+    void    (Karen::*fcnPtr[4])();
+};
+
+
+#endif

@@ -6,15 +6,20 @@
 /*   By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 00:28:21 by aaqari            #+#    #+#             */
-/*   Updated: 2022/06/24 03:45:43 by aaqari           ###   ########.fr       */
+/*   Updated: 2022/06/27 05:10:49 by aaqari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
+Zombie::Zombie( std::string name ) : name(name) {
+    std::cout<<"Parameterized constructor Executed"<<std::endl;
+};
+
 Zombie::Zombie(){
     std::cout<<"Constructor Executed"<<std::endl;
 };
+
 
 Zombie::~Zombie()
 {

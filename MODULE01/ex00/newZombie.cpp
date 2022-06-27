@@ -6,16 +6,15 @@
 /*   By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 00:28:15 by aaqari            #+#    #+#             */
-/*   Updated: 2022/06/24 03:45:18 by aaqari           ###   ########.fr       */
+/*   Updated: 2022/06/27 05:05:54 by aaqari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie* new_zombie(std::string name)
+Zombie* newZombie(std::string name)
 {
-    Zombie *newZombie = new Zombie();
-    newZombie->set_name(name);
-
+    Zombie *newZombie = new Zombie(name);
+    newZombie->announce();
     return (newZombie);
 }

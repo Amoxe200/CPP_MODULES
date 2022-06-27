@@ -6,7 +6,7 @@
 /*   By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 00:28:11 by aaqari            #+#    #+#             */
-/*   Updated: 2022/06/25 03:06:56 by aaqari           ###   ########.fr       */
+/*   Updated: 2022/06/27 05:17:01 by aaqari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main(void)
 
     i = 0;
     n = 4;
-    Zombie *zombies;   
+    Zombie *zombies;
     std::cout<<"Calling the Zombie Horde"<<std::endl;
     zombies = zombieHorde(n, "Zombies");
     while (i < n)

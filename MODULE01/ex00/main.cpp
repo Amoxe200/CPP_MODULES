@@ -6,7 +6,7 @@
 /*   By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 00:28:11 by aaqari            #+#    #+#             */
-/*   Updated: 2022/06/24 03:49:40 by aaqari           ###   ########.fr       */
+/*   Updated: 2022/06/27 04:54:09 by aaqari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ int main(void)
     std::cout<<"-------------------------------------------"<<std::endl;
     std::cout<<"Creating a Zombie using newZombie Function"<<std::endl;
 
-    Zombie* newZombie;
-    newZombie = new_zombie("NewZombie");
-    delete newZombie;
+    Zombie* new_Zombie;
+    new_Zombie = newZombie("NewZombie");
+    delete new_Zombie;
 
     std::cout<<"------------------"<<std::endl;
     std::cout<<"Calling Random Chump function"<<std::endl;
