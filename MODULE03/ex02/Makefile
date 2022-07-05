@@ -6,12 +6,12 @@
 #    By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/30 09:54:23 by aaqari            #+#    #+#              #
-#    Updated: 2022/06/30 16:56:09 by aaqari           ###   ########.fr        #
+#    Updated: 2022/07/04 14:01:41 by aaqari           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fragtrap
-CC = clang++ -g
+CC = c++ -g
 SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 ObJ = ${SRC:.cpp=.o}
 FLAGS = -Wall -Wextra -Werror -std=c++98

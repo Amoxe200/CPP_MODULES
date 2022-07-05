@@ -6,12 +6,12 @@
 #    By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/30 09:54:23 by aaqari            #+#    #+#              #
-#    Updated: 2022/07/01 11:28:13 by aaqari           ###   ########.fr        #
+#    Updated: 2022/07/04 14:01:41 by aaqari           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = claptrap
-CC = clang++ -g
+CC = c++ -g
 SRC = main.cpp ClapTrap.cpp
 ObJ = ${SRC:.cpp=.o}
 FLAGS = -Wall -Wextra -Werror -std=c++98

@@ -6,12 +6,12 @@
 #    By: aaqari <aaqari@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/29 05:05:09 by aaqari            #+#    #+#              #
-#    Updated: 2022/06/29 05:05:11 by aaqari           ###   ########.fr        #
+#    Updated: 2022/07/04 14:01:41 by aaqari           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fixed
-CC = clang++ -g
+CC = c++ -g
 SRC = main.cpp fixed.cpp
 ObJ = ${SRC:.cpp=.o}
 FLAGS = -Wall -Wextra -Werror -std=c++98
